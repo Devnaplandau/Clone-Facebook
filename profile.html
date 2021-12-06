@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile page - AnceBook - Free social network</title>
+  <link rel="icon" href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/my.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="./index.html">
+        <img src="./images/ancebook.png" class="logo">
+      </a>
+      <ul>
+        <li><img src="./images/notification.png"></li>
+        <li><img src="./images/inbox.png"></li>
+        <li><img src="./images/video.png"></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+    <div class="search-box">
+      <img src="./images/search.png">
+      <input type="text" placeholder="search">
+    </div>
+    <div class="nav-user-icon online" onclick="settingMenuToggle()">
+      <img src="./images/ancrop.png">
+    </div>
+  </div>
+<!-- setting menu me -->
+    <div class="setting-menu">
+      <!-- tao btn  -->
+      <div id="dark-btn">
+        <span></span>
+      </div>
+      <!-- ---- -->
+      <div class="setting-menu-inner">
+        <div class="user-portfolio">
+          <img src="./images/ancrop.png" alt="">
+          <div>
+            <p>An TiD</p>
+           <a href="#">See your profile</a>
+          </div>
+        </div>
+        <hr>
+        <div class="user-portfolio">
+          <img src="./images/feedback.png">
+          <div>
+            <p>Give Feedback</p>
+           <a href="#">Help us to improve the new design</a>
+          </div>
+        </div>
+        <hr>
+        <div class="setting-links">
+          <img src="./images/setting.png" class="setting-icon">
+          <a href="#">Setting & Privacy <img src="./images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="./images/help.png" class="setting-icon">
+          <a href="#">Help & Support <img src="./images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="./images/display.png" class="setting-icon">
+          <a href="#">Display & Accessibility <img src="./images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="./images/logout.png" class="setting-icon">
+          <a href="#">Logout <img src="./images/arrow.png" width="10px"></a>
+        </div>
+      </div>    
+    </div>
+  </nav>
+<!-- end nav -->
+<!-- profile page ------- -->
+    <div class="profile-container">
+      <div class="img-page">
+        <img src="./images/an1.jpg" class="cover-img">
+      </div>
+      
+      <div class="profile-details">
+        <div class="main__avt">
+          <img src="./images/andz.jpg">
+          <div class="content-avt">
+            <h1 class="name">An TiD</h1>
+            <span>I'm not perfect I'm original</span>
+            <a href="">Edit</a>
+          </div>
+        </div>
+        <!-- <div class="pd-left">
+
+
+          <div class="pd-row">
+            <img src="./images/an1.jpg" class="pd-images">
+            <div>
+              <h3>An Coce</h3>
+              <p>500 Friends - 100 mutual</p>
+              <img src="./images/member-1.png">
+              <img src="./images/member-2.png">
+              <img src="./images/member-3.png">
+              <img src="./images/member-4.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-right">
+        <button type="button"><img src="./images/add-friends.png"> Friends</button>
+        <button type="button"><img src="./images/message.png"> Message</button>
+        <br>
+          <a href=""><img src="./images/more.png"></a>
+        </div>
+     -->
+      </div>
+
+   <!-- nav page proflie -->
+   <div class="main__bottom-cover">
+      <div class="page-left">
+        <ul class="container-page">
+          <li>Post</li>
+          <li>Recommend</li>
+          <li>Friend</li>
+          <li>Picture</li>
+          <li>Archives</li>
+          <li>Video</li>
+          <li>See more <i class="fa fa-caret-down"></i></li>
+        </ul>
+      </div>
+
+      <div class="page-right">
+ <button type="button"><i class="icon fa fa-plus-circle"></i>Add to news</button>
+  <button type="button"><i class="icon fa fa-pencil"></i>Edit profile</button>
+         <div class="icon-edit">
+          <i class="icon-item fa fa-ellipsis-h"></i>
+         </div>
+      </div>
+    </div>
+
+
+      <!--  -->
+      <div class="profile-info">
+        <div class="info-col">
+
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">I'm not Prefect I'm Original.
+              <img src="./images/feeling.png">
+            </p>
+           <hr>
+           <ul>
+             <li><i class="icon-profile fa fa-graduation-cap"></i>Studied at Tay Do</li>
+             <li><i class="icon-profile fa fa-home"></i>Live in Soc Trang</li>
+             <li><i class="icon-profile fa fa-rss"></i>There are 464 followers
+            </li>
+           </ul>
+           <div class="setting">
+             <div class="edit">
+              <span>Edit details</span>
+              <span>Add hobbies</span>
+             </div>
+            <div class="img-favorite">
+              <div class="item1">
+                <img src="./images/photo/2.jpg">
+                <p>Travel</p>
+              </div>
+              <div class="item1">
+                <img src="./images/photo/4.jpg">
+                <p>Working</p>
+              </div>
+              <div class="item1">
+                <img src="./images/photo/5.jpg">
+                <p>Relax</p>
+              </div>
+            </div>
+            <span>Noteworthy edits</span>
+           </div>
+          
+          </div>
+<!--  -->
+        <div class="profile-intro">
+          <div class="title-box">
+            <h3>Photos</h3>
+            <a href="">All Photos</a>
+          </div>
+          <div class="photo-box">
+            <div><img src="./images/photo/1.jpg"></div>
+            <div><img src="./images/photo/2.jpg"></div>
+            <div><img src="./images/photo/3.jpg"></div>
+            <div><img src="./images/photo/4.jpg"></div>
+            <div><img src="./images/photo/5.jpg"></div>
+            <div><img src="./images/photo/6.jpg"></div>
+          </div>
+        </div>
+        <div class="profile-intro">
+          <div class="title-box">
+            <h3>Friends</h3>
+            <a href="">All Friends</a>
+          </div>
+          <p>10.000 friends</p>
+          <div class="friend-box">
+            <div><img src="./images/an1.jpg"><p>An KiLiu</p></div>
+            <div><img src="./images/an2.jpg"><p>An Acke</p></div>
+            <div><img src="./images/an3.jpg"><p>An TOny</p></div>
+            <div><img src="./images/an4.jpg"><P>An center</P></div>
+            <div><img src="./images/an5.jpg"><p>Quân KP</p></div>
+            <div><img src="./images/andz.jpg"><p>Qân CP</p></div>
+          </div>
+        </div>
+        </div>
+    
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-portfolio">
+              <img src="./images/ancrop.png" alt="">
+              <div>
+                <p>An TiD</p>
+                <small>Public <i class="fa fa-caret-down" aria-hidden="true"></i></small>
+              </div>
+            </div>
+            <div class="post-input-container">
+             <textarea rows="3" placeholder="What's on your mind, An TiD?"></textarea>
+             <div class="add-post-links">
+               <a href="#"><img src="./images/live-video.png">Live Video</a>
+               <a href="#"><img src="./images/photo.png">Photo Video</a>
+               <a href="#"><img src="./images/feeling.png">Feling/Activity</a>
+             </div>
+            </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-portfolio">
+              <img src="./images/ancrop.png" alt="">
+              <div>
+                <p>An TiD</p>
+                <span>September 1 2021, 10:30 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+          
+          <p class="post-text">Follow <span> @AnTiD</span> a little bit each day, try harder for tomorrow. <a href="#">#AnTiD</a>
+          <a href="#">#ANCEBOOK</a></p>
+          <img src="./images/antuyencrop.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="./images/like-blue.png">100tr</div>
+              <div><img src="./images/comments.png">30tr</div>
+              <div><img src="./images/share.png">54tr</div>
+          </div>
+            <!-- <div class="activity-icons">
+                <div class="list-style" onclick="countclick()"><img src="./images/like-blue.png">
+                  <div id="result"></div>
+                </div>
+                <div><img src="./images/comments.png">10tr</div>
+                <div><img src="./images/share.png">30tr</div>
+            </div> -->
+            <div class="post-profile-icon">
+              <img src="./images/ancrop.png"><i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+        <!-- 1 post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-portfolio">
+              <img src="./images/ancrop.png" alt="">
+              <div>
+                <p>An TiD</p>
+                <span>September 5 2021, 08:30 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+          
+          <p class="post-text">Follow <span> @AnTiD</span> to be able to update many interesting and interesting things every day. <a href="#">#AnTiD</a>
+          <a href="#">#ANCEBOOK</a></p>
+          <img src="./images/andz.jpg" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="./images/like.png">100tr</div>
+                <div><img src="./images/comments.png">30tr</div>
+                <div><img src="./images/share.png">54tr</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/ancrop.png"><i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <!-- 1post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-portfolio">
+              <img src="./images/ancrop.png" alt="">
+              <div>
+                <p>An TiD</p>
+                <span>September 16 2021, 08:30 am</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+          
+          <p class="post-text">Follow <span> @AnTiD</span> Life has many challenges, must try more, otherwise will be eliminated. <a href="#">#AnTiD</a>
+          <a href="#">#ANCEBOOK</a></p>
+          <img src="./images/work.jpg" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="./images/like.png">10tr</div>
+                <div><img src="./images/comments.png">3tr</div>
+                <div><img src="./images/share.png">4tr</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/ancrop.png"><i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+
+        <div class="footer">
+          <p>Copyright 2021 - AnTiD with ANCEBOOK</p>
+        </div>
+
+<!-- xu li sk -->
+<script src="./js/main.js"></script>
+</body>
+</html>

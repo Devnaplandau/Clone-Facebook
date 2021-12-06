@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnceBook - Free social network</title>
+  <link rel="icon" href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/my.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="./index.html">
+        <img src="./images/ancebook.png" class="logo">
+      </a>
+      <ul>
+        <li><img src="./images/notification.png"></li>
+        <li><img src="./images/inbox.png"></li>
+        <li><img src="./images/video.png"></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+    <div class="search-box">
+      <img src="./images/search.png">
+      <input type="text" placeholder="search">
+    </div>
+    <div class="nav-user-icon online" onclick="settingMenuToggle()">
+      <img src="./images/ancrop.png">
+    </div>
+  </div>
+<!-- setting menu me -->
+    <div class="setting-menu">
+      <!-- tao btn  -->
+      <div id="dark-btn">
+        <span></span>
+      </div>
+      <!-- ---- -->
+      <div class="setting-menu-inner">
+        <div class="user-portfolio">
+          <img src="./images/ancrop.png" alt="">
+          <div>
+            <p>An TiD</p>
+           <a href="./profile.html">See your profile</a>
+          </div>
+        </div>
+        <hr>
+        <div class="user-portfolio">
+          <img src="./images/feedback.png">
+          <div>
+            <p>Give Feedback</p>
+           <a href="#">Help us to improve the new design</a>
+          </div>
+        </div>
+        <hr>
+        <div class="setting-links">
+          <img src="./images/setting.png" class="setting-icon">
+          <a href="#">Setting & Privacy <img src="./images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="./images/help.png" class="setting-icon">
+          <a href="#">Help & Support <img src="./images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="./images/display.png" class="setting-icon">
+          <a href="#">Display & Accessibility <img src="./images/arrow.png" width="10px"></a>
+        </div>
+        <div class="setting-links">
+          <img src="./images/logout.png" class="setting-icon">
+          <a href="#">Logout <img src="./images/arrow.png" width="10px"></a>
+        </div>
+      </div>
+     
+    </div>
+
+  </nav>
+<!-- end nav -->
+<!-- start container -->
+<div class="container">
+  <!-- left sider -->
+<div class="left-sidebar">
+  <div class="imp-links">
+    <a href="#"><img src="./images/news.png">Latest News</a>
+    <a href="#"><img src="./images/friends.png">Friends</a>
+    <a href="#"><img src="./images/group.png">Group</a>
+    <a href="#"><img src="./images/marketplace.png">Marketplace</a>
+    <a href="#"><img src="./images/watch.png">Watch</a>
+    <a href="#">See More</a>
+  </div>
+  <div class="shortcut-links">
+    <p>Your Shortcuts</p>
+    <a href="#"><img src="./images/1.jpg">Web Developers</a>
+    <a href="#"><img src="./images/3.jpg">Web Design Course</a>
+    <a href="#"><img src="./images/4.jpg">Full Stack Development</a>
+    <a href="#"><img src="./images/5.jpg">AnTiD WebLog</a>
+  </div>
+</div>
+<!-- main content -->
+<div class="main-content">
+<div class="story-gallery">
+  <div class="story story1">
+    <img src="./images/upload.png">
+    <p>Post Story</p>
+  </div>
+  <div class="story story2">
+    <img src="./images/member-5.png">
+    <p>TokuFu</p>
+  </div>
+  <div class="story story3">
+    <img src="./images/member-4.png">
+    <p>Jon Half </p>
+  </div>
+  <div class="story story4">
+    <img src="./images/member-3.png">
+    <p>Mekey Luffe</p>
+  </div>
+  <div class="story story5">
+    <img src="./images/member-2.png">
+    <p>Oru Chiku</p>
+  </div>
+</div>
+
+
+      <div class="write-post-container">
+          <div class="user-portfolio">
+            <img src="./images/ancrop.png" alt="">
+            <div>
+              <p>An TiD</p>
+              <small>Public <i class="fa fa-caret-down" aria-hidden="true"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+           <textarea rows="3" placeholder="What's on your mind, An TiD?"></textarea>
+           <div class="add-post-links">
+             <a href="#"><img src="./images/live-video.png">Live Video</a>
+             <a href="#"><img src="./images/photo.png">Photo Video</a>
+             <a href="#"><img src="./images/feeling.png">Feling/Activity</a>
+           </div>
+          </div>
+      </div>
+      <!-- 1 post -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-portfolio">
+                <img src="./images/ancrop.png" alt="">
+                <div>
+                  <p>An TiD</p>
+                  <span>September 1 2021, 10:30 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            </div>
+            
+            <p class="post-text">Follow <span> @AnTiD</span> a little bit each day, try harder for tomorrow. <a href="#">#AnTiD</a>
+            <a href="#">#ANCEBOOK</a></p>
+            <img src="./images/antuyencrop.png" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="./images/like-blue.png">100tr</div>
+                <div><img src="./images/comments.png">30tr</div>
+                <div><img src="./images/share.png">54tr</div>
+            </div>
+              <!-- <div class="activity-icons">
+                  <div class="list-style" onclick="countclick()"><img src="./images/like-blue.png">
+                    <div id="result"></div>
+                  </div>
+                  <div><img src="./images/comments.png">10tr</div>
+                  <div><img src="./images/share.png">30tr</div>
+              </div> -->
+              <div class="post-profile-icon">
+                <img src="./images/ancrop.png"><i class="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>
+
+          </div>
+          <!-- 1 post -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-portfolio">
+                <img src="./images/ancrop.png" alt="">
+                <div>
+                  <p>An TiD</p>
+                  <span>September 5 2021, 08:30 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            </div>
+            
+            <p class="post-text">Follow <span> @AnTiD</span> to be able to update many interesting and interesting things every day. <a href="#">#AnTiD</a>
+            <a href="#">#ANCEBOOK</a></p>
+            <img src="./images/andz.jpg" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                  <div><img src="./images/like.png">100tr</div>
+                  <div><img src="./images/comments.png">30tr</div>
+                  <div><img src="./images/share.png">54tr</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/ancrop.png"><i class="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <!-- 1post -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-portfolio">
+                <img src="./images/ancrop.png" alt="">
+                <div>
+                  <p>An TiD</p>
+                  <span>September 16 2021, 08:30 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            </div>
+            
+            <p class="post-text">Follow <span> @AnTiD</span> Life has many challenges, must try more, otherwise will be eliminated. <a href="#">#AnTiD</a>
+            <a href="#">#ANCEBOOK</a></p>
+            <img src="./images/work.jpg" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                  <div><img src="./images/like.png">10tr</div>
+                  <div><img src="./images/comments.png">3tr</div>
+                  <div><img src="./images/share.png">4tr</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/ancrop.png"><i class="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>
+
+          </div>
+          <button type="button" class="load-more-btn">Load More</button>
+</div>
+<!-- right sidebar -->
+<div class="right-sidebar">
+
+  <div class="sidebar-title">
+    <h4>Events</h4>
+    <a href="#">See All</a>
+  </div>
+
+  <div class="event">
+    <div class="left-event">
+      <h3>3</h3>
+      <span>Sep</span>
+    </div>
+    <div class="right-event">
+      <h4>Learn Programming</h4>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> 81-Storey Building</p>
+      <a href="#">More Info</a>
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="left-event">
+      <h3>9</h3>
+      <span>Jub</span>
+    </div>
+    <div class="right-event">
+      <h4>Learn Marketing</h4>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> 81-Storey Building</p>
+      <a href="#">More Info</a>
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="left-event">
+      <h3>19</h3>
+      <span>Oct</span>
+    </div>
+    <div class="right-event">
+      <h4>Programming</h4>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> 81-Storey Building</p>
+      <a href="#">More Info</a>
+    </div>
+  </div>
+  <div class="sidebar-title">
+    <h4>Advertisement</h4>
+    <a href="#">Close</a>
+  </div>
+  <img src="./images/1.jpg" class="sidebar-ads">
+  <div class="sidebar-title">
+    <h4>Conversation</h4>
+    <a href="#">Hide Chat</a>
+  </div>
+<!-- list fri onl -->
+  <div class="online-list">
+    <div class="online">
+      <img src="./images/an1.jpg">
+    </div>
+    <p>An Tobe</p>
+  </div>
+
+  <div class="online-list">
+     <div class="online">
+       <img src="./images/an3.jpg">
+       </div>
+     <p>An Socei</p>
+      </div>
+
+ <div class="online-list">
+  <div class="online">
+    <img src="./images/an2.jpg">
+    </div>
+    <p>An Samouche</p>
+</div>
+
+
+</div>
+</div>
+
+        <div class="footer">
+          <p>Copyright 2021 - AnTiD with ANCEBOOK</p>
+        </div>
+
+<!-- xu li sk -->
+<script src="./js/main.js"></script>
+</body>
+</html>
